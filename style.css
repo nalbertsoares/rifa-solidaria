@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inicio{
+    background-image: url(0001.jpg);
+    background-position: center;
+    background-size: 100%;
+    height: 780px;
+}
+
+.inicio > .header{
+    background-color: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15%;
+    padding: 25px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #ebebeb;
+}
+
+.container{
+    background-color: rgb(0, 0, 49);
+    width: 100%;
+    height: 200vh;
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.container h1{
+    color: rgb(230, 190, 16);
+    font-size: 3.2em;
+    margin-bottom: 10px;
+
+}
+
+.container h2{
+    color: rgb(216, 104, 0);
+}
+
+.container h3{
+    font-size: 2em;
+}
+
+.container p{
+    margin: 0 300px 30px 300px;
+    font-size: 1.3em;
+}
+
+.carrossel{
+    display: flex;
+    margin: 100px 0 0 0;
+    justify-content: center;
+    font-size: 2em;
+    color: rgb(255, 208, 0);
+}
+
+.setas{
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+
+.setas:hover{
+    color: rgb(230, 190, 16);
+    transition: 0.5s;
+}
+
+.setas:active{
+    font-size: 85%;
+    transition: 0.5s;
+}
+
+.slider{
+    margin: 0 -80px;
+    width: 880px;
+    height: 520px;
+    overflow: hidden;
+    border: 5px solid rgb(230, 190, 16);
+    border-radius: 10px;
+}
+
+.slides{
+    height: 5px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.slide{
+    width: 100%;
+    position: relative;
+}
+
+.slide img{
+    width: 440px;
+    height: 520px;
+    transition: 0.5s;
+}
+
+.slide2 img{
+    width: 890px;
+    height: 520px;
+}
+
+.slide3 img{
+    width: 890px;
+    height: 520px;
+}
+
+#pix{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 100px;
+    gap: 1%;
+}
+
+#pix h2{
+    margin-top: 30px;
+    color: rgb(230, 190, 16);
+    font-size: 2em;
+}
+
+footer{
+    background-color: #000000;
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+button{
+    padding: 20px 100px;
+    font-size: 3.5em;
+    background-color: green;
+    border-radius: 30px;
+    color: #ffffff;
+    box-shadow: 10px 10px 30px #000000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(0, 80, 0);
+    padding: 18px 95px;
+    font-size: 3.3em;
+}
+
+
+
+@media screen and (max-width: 950px){
+
+    .inicio{
+        background-position: top;
+        height: 750px;
+    }
+
+    .container{
+        height: 230vh;
+    }
+
+    .container h1{
+        font-size: 2.5em;
+    }
+
+    .container p{
+        margin: 50px 80px 50px 80px;
+        font-size: 1.3em;
+    }
+
+    .container h3{
+        font-size: 2em;
+    }
+
+    .slider{
+        margin: 0 -80px;
+        width: 440px;
+        height: 520px;
+    }
+
+    .slide img{
+        width: 480px;
+        height: 520px;
+        transition: 0.5s;
+    }
+    
+
+    .slide2 img{
+        width: 300px;
+        height: 520px;
+    }
+
+    .slide3 img{
+        width: 480px;
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .inicio{
+        background-position: top;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .inicio{
+        background-position: top;
+        height: 380px;
+    }
+
+    .inicio > .header{
+        display: none;
+        visibility: hidden;
+    }
+
+    .container h1{
+        font-size: 1.7em;
+    }
+
+    .container h3{
+        font-size: 1.5em;
+    }
+
+    .container p{
+        text-align: justify;
+    }
+
+    #pix{
+        display: block;
+        margin-bottom: 0;
+    }
+
+    #participar{
+        font-size: 1.3em;
+        text-align: center;
+        margin: 50px 50px;
+    }
+
+    button{
+        padding: 15px 30px;
+        font-size: 2.5em;
+    }
+
+    button:hover{
+        background-color: rgb(0, 80, 0);
+        padding: 10px 25px;
+        font-size: 2.3em;
+    }
+}
